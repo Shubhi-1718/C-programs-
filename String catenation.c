@@ -25,4 +25,5 @@ void strcate(char *destination,char *source)
         source++;
     }
     *destination='\0';
+   printf("\nString after concatenation is %s",*destination);
 }
