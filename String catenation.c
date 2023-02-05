@@ -8,7 +8,8 @@ int main()
    gets(data);
    printf("\nEnter the string ");
    gets(str2);
-strcate(str1,str2);
+strcate(data,str2);
+    printf("\nString after concatenation is %s",data);
 }
 void strcate(char *destination,char *source)
 {
@@ -25,5 +26,5 @@ void strcate(char *destination,char *source)
         source++;
     }
     *destination='\0';
-   printf("\nString after concatenation is %s",*destination);
+  
 }
