@@ -9,17 +9,6 @@ void write(int *a,int n)
   for(int i=0;i<n;i++)
     printf("%d ",*(a+i));  
 } 
-int findmax(int *a,int n)
-{
-    int max;
-    max=*a;
-    for(int i=0;i<n;i++)
-    {
-        if(max<*(a+i))
-        max=*(a+i);
-    }
-    return max;
-}
 int search(int *a,int n,int num)
 {
     for(int i =0;i<n;i++)
@@ -36,7 +25,6 @@ int main()
  scanf("%d",&n);
  read(a,n);
  write(a,n);
- printf("\n%d ",findmax(a,n));
  printf("\nEnter a number to find in array");
  scanf("%d",&num);
  index=search(a,n,num);
